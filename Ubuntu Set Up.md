@@ -7,6 +7,8 @@ sudo apt update && sudo apt upgrade
 # 
 Remove snap
 
+[Script](https://github.com/SirStevesALot/Ubuntu/blob/d7a3abda21d22d319a4516a9d4c3d7f29c103a92/remove-snap.sh)
+
 ##### Install Flatpak
 
 ```bash
