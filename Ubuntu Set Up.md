@@ -1,15 +1,15 @@
 Change to local mirror for faster updates
-##### Check for updates
+### ⬆️ Check for updates
 
 ```
 sudo apt update && sudo apt upgrade
 ```
 
-Remove snap
+### 🚮 Remove snap
 
-- [Script](https://github.com/SirStevesALot/Ubuntu/blob/d7a3abda21d22d319a4516a9d4c3d7f29c103a92/remove-snap.sh)
+[Script](https://github.com/SirStevesALot/Ubuntu/blob/d7a3abda21d22d319a4516a9d4c3d7f29c103a92/remove-snap.sh)
 
-##### Install Flatpak
+### 🪛 Install Flatpak
 
 ```bash
 sudo apt install flatpak
@@ -26,18 +26,20 @@ Add the Flathub repository
 ```shell
 flatpak remote-add --if-not-exists flathub ttps://flathub.org/repo/flathub.flatpakrepo
 ```
-##### Install Multimedia codec and plugins this includes fonts
+### 🔉 Install Multimedia codec and plugins this includes fonts
 
 ```
-$ sudo apt install -y ubuntu-restricted-extras
+sudo apt install -y ubuntu-restricted-extras
 ```
+### 🐭 Turn of mouse acceleration
 
+### 🧱 Install firewall GUI and turn it on
 
-Turn of mouse acceleration
-##### Install firewall GUI and turn it on
-
-- sudo apt install gufw
-##### Install
+```
+  sudo apt install gufw
+  ```
+  
+### 🪛 Install
 
 - Brave [[Brave Flags]]
 - Onlyoffice
@@ -48,17 +50,25 @@ Turn of mouse acceleration
 - Steam
 - Pika backup 
 - Calibre   
-- Edge
-- Teams
+- Edge (for work)
+- Teams (for work)
 
 
-##### Install Fastfetch and set to Terminal startup
+### 🪛 Install Fastfetch and set to Terminal startup
 
-Show hidden files
+```
+sudo add-apt-repository ppa:zhangsongcui3371/fastfetch
+```
+```
+sudo apt update
+sudo apt install fastfetch
+```
 
 Open the .bashrc file in your home directory
 
+```
 nano ~/.bashrc
+```
 
 Add fastfetch at the end of .bashrc file to display it when launching the terminal.
 
@@ -72,7 +82,7 @@ Copy config.jsonc to /home/steve/.config/fastfetch
 
 [My Fastfetch config](https://github.com/SirStevesALot/Ubuntu/blob/f925572ee1b86b1ddde729d31e7ade7b25e0cda0/Fastfetch.config)
 
-##### Install Extension Manager
+### 🪛 Install Extension Manager
 
 And then Install extensions
 
@@ -86,17 +96,17 @@ And then Install extensions
 
 [More Gnome extensions](https://www.youtube.com/watch?v=ZPcxwiyCqtc)
 
-##### Turn off shortcut to activate apps
+### 🧯 Turn off shortcut to launch apps from dock
 
 Extension Manager - Ubuntu Dock - Behaviour - User keyboard shortcuts to activate apps
 
-##### Enable 'Minimise on Click'
+### 🎚️ Enable 'Minimise on Click'
 
 Extension Manager - Ubuntu Dock - Behaviour - Click action - Minimise
-##### Change DNS Provider
+### 🌐 Change DNS Provider
 
 [Cloudflare](https://one.one.one.one/dns/)
-##### Shortcuts to set
+### ⌨️ Shortcuts to set
 
 - Super + E open Home folder
 - Super + C open Calculator
@@ -105,11 +115,18 @@ Extension Manager - Ubuntu Dock - Behaviour - Click action - Minimise
 - Super + Q Close window
 - Super + 1,2,3,4 switch to relevant workspace
 
-# 
-
 >[!todo] Go through settings and change to preference
 
-Use `sudo apt autoremove` regularly, especially after removing an app or updating kernel.
+#
+Use sudo apt autoremove regularly, especially after removing an app or updating kernel.
+```
+sudo apt autoremove
+```
+ 
 
-Use `flatpak uninstall --unused --delete-data` regularly, especially after installing a flatpak, or after a flatpak runtime is updated.
+Use flatpak uninstall --unused --delete-data regularly, especially after installing a flatpak, or after a flatpak runtime is updated.
+
+```
+flatpak uninstall --unused --delete-data
+```
 
