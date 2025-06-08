@@ -1,13 +1,13 @@
-Change to local mirror for updates
+Change to local mirror for faster updates
 ##### Check for updates
 
 ```
 sudo apt update && sudo apt upgrade
 ```
-# 
+
 Remove snap
 
-[Script](https://github.com/SirStevesALot/Ubuntu/blob/d7a3abda21d22d319a4516a9d4c3d7f29c103a92/remove-snap.sh)
+- [Script](https://github.com/SirStevesALot/Ubuntu/blob/d7a3abda21d22d319a4516a9d4c3d7f29c103a92/remove-snap.sh)
 
 ##### Install Flatpak
 
@@ -31,7 +31,7 @@ flatpak remote-add --if-not-exists flathub ttps://flathub.org/repo/flathub.flatp
 ```
 $ sudo apt install -y ubuntu-restricted-extras
 ```
-# 
+
 
 Turn of mouse acceleration
 ##### Install firewall GUI and turn it on
@@ -67,11 +67,10 @@ Install a nerd font for it to display correctly
 Copy config.jsonc to /home/steve/.config/fastfetch
 
 [It's Foss - Fastfetch](https://itsfoss.com/fine-control-fastfetch/)
-	
-[[Fastfetch .config]]
 
 [Nerd Fonts](https://www.nerdfonts.com/font-downloads)
 
+[My Fastfetch config](https://github.com/SirStevesALot/Ubuntu/blob/f925572ee1b86b1ddde729d31e7ade7b25e0cda0/Fastfetch.config)
 
 ##### Install Extension Manager
 
